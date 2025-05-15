@@ -57,16 +57,61 @@ body {
   border: 20px solid rgb(95, 169, 136);
 }
 
+/* phones */
+@media (min-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .articles article {
+    font-size: 18px;
+  }
+}
+
+/* tablets */
 @media (min-width: 768px) {
   .main-content {
     flex-direction: row;
+    align-items: flex-start;
   }
 
   .aside {
     width: 25%;
+    min-height: 400px;
   }
 
   .articles {
     width: 75%;
+    flex-direction: column;
+  }
+}
+
+/* laptops */
+@media (min-width: 992px) {
+  body {
+    font-size: 18px;
+  }
+
+  .articles article {
+    padding: 30px;
+    font-size: 20px;
+  }
+
+  .aside {
+    width: 35%;
+    min-height: 400px;
+  }
+}
+
+/* desktops */
+@media (min-width: 1200px) {
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .header,
+  .footer {
+    font-size: 24px;
   }
 }
